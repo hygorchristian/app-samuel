@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Guia Comercial Vale do Aço</string>
+
+
+    <string-array name="spiner_cidades_loja">
+        <item>Seleciona uma Cidade</item>
+        <item>Tarumirim/MG</item>
+        <item>Alvarenga/MG</item>
+        <item>Itanhomi/MG</item>
+        <item>Engenheiro Caldas/MG</item>
+        <item>Fernandes Tourinho/MG</item>
+        <item>Sobralia/MG</item>
+        <item>Dom Cavate/MG</item>
+        <item>Inhapim/MG</item>
+        <item>Governado Valadares/MG</item>
+        <item>Ipatinga/MG</item>
+        <item>Caratinga/MG</item>
+        <item>São Domingo das Dores/MG</item>
+    </string-array>
+
+
+</resources>

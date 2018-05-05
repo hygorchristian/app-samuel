@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/colorPrimary"
+    tools:context="com.samuca.contato.crud.activities.MainActivity">
+
+
+
+        <LinearLayout
+            android:id="@+id/lyoutLista"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_cadastro_categoria"
+                android:layout_width="match_parent"
+                android:layout_gravity="start"
+                android:background="?attr/colorPrimaryDark"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                android:layout_height="?actionBarSize">
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <EditText
+                        android:id="@+id/edtBusacar"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="30dp"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:typeface="serif"
+                        android:layout_marginBottom="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/modelo_tolbar_filtro"
+                        android:hint="Pesquisar"
+                        android:padding="12dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:inputType="textAutoComplete" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/edtCidadeSeleciondaBusca"
+                    android:layout_width="match_parent"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="8dp"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:inputType="textAutoComplete" />
+
+  <!--
+                <LinearLayout
+                    android:background="@drawable/modelo_edt2"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content">
+
+
+                    <Spinner
+                        android:id="@+id/SpinerCidadeEntra1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:padding="10dp"
+                        android:typeface="serif"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                -->
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ProgressBar
+                    android:id="@+id/progressebarListaCategoria"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:indeterminate="true"
+                    android:visibility="invisible"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+
+                <ListView
+                    android:id="@+id/listaContato"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+
+
+            </LinearLayout>
+
+
+        <!--    <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Spinner
+                    android:id="@+id/SpinerCidadeEntra1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </Spinner>
+            </LinearLayout>  -->
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+

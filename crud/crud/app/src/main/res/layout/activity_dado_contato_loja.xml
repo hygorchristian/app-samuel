@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.samuca.contato.crud.activities.DadoContatoLojaActivity">
+
+
+<android.support.design.widget.AppBarLayout
+    android:id="@+id/appBarLoja"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:fitsSystemWindows="true"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        app:contentScrim="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        app:expandedTitleGravity="center|bottom"
+        app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Headline"   >
+
+        <ImageView
+            android:id="@+id/imageDadoEempresa"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/fotobonita"
+            android:scaleType="centerCrop"
+            android:fitsSystemWindows="true"
+            app:layout_collapseMode="parallax" />
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/toolbarDadoLoja"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin">
+
+           <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+               <ImageView
+                   android:id="@+id/imgDadoLojaVolta"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/ic_volta_samu"/>
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.CollapsingToolbarLayout>
+
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:elevation="5dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="8dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="8dp"
+                            android:textSize="17dp"
+                            android:textStyle="bold"
+                            android:text="Dados Para Contato *"
+                            android:typeface="serif"
+                            android:layout_marginLeft="8dp"
+                            android:textColor="@color/colorPrimaryDark"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginTop="8dp"
+                                android:textStyle="bold"
+                                android:padding="1dp"
+                                android:textSize="18dp"
+                                android:background="@drawable/ic_anome_loja_joia"
+                                android:textColor="@color/colorPrimary" />
+                            <TextView
+                                android:id="@+id/nomeDadoEmpresa"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginTop="8dp"
+                                android:textStyle="bold"
+                                android:typeface="serif"
+                                android:padding="1dp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="16dp"
+                                android:text="" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutTelefone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:padding="1dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginBottom="8dp"
+                                android:background="@drawable/ic_telefone_loja"
+                                android:textStyle="bold"
+                                android:typeface="serif"
+                                android:textSize="16dp"
+                                android:inputType="phone"
+                                />
+                            <TextView
+                                android:id="@+id/telefoneDadoEmpresa"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:padding="1dp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:textStyle="bold"
+                                android:typeface="serif"
+                                android:textSize="16dp"
+                                android:inputType="phone"
+                                android:text="" />
+
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginTop="8dp"
+                                android:background="@drawable/ic_endereco_loja"
+                                android:textStyle="bold"
+                                android:padding="1dp"
+                                android:textSize="18dp"
+                                />
+                            <TextView
+                                android:id="@+id/enderecoDadoEmpresa"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="8dp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textStyle="bold"
+                                android:typeface="serif"
+                                android:padding="1dp"
+                                android:textSize="12dp"
+                                android:text="" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:typeface="serif"
+                            android:layout_marginLeft="8dp"
+                            android:text="Rede Sociais *"/>
+
+                        <LinearLayout
+                            android:id="@+id/layoutWhatsapp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginTop="8dp"
+                                android:background="@drawable/whatsapp2"
+                                android:textStyle="bold"
+                                android:padding="1dp"
+                                android:textSize="18dp"
+                                 />
+                            <TextView
+                                android:id="@+id/whatsappDadoEmpresa"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginTop="15dp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textStyle="bold"
+                                android:typeface="serif"
+                                android:padding="1dp"
+                                android:inputType="phone"
+                                android:textSize="16dp"
+                                android:text="" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/layoutEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:padding="1dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="8dp"
+                                android:textStyle="bold"
+                                android:textSize="18dp"
+                                android:inputType="phone"
+                                android:background="@drawable/email"
+                                 />
+                            <TextView
+                                android:id="@+id/emailDadoEmpresa"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:padding="1dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textStyle="bold"
+                                android:typeface="serif"
+                                android:textSize="12dp"
+                                android:inputType="textEmailAddress"
+                                android:text="" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/layoutInstagram"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="8dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:background="@drawable/instagran"
+                                android:textStyle="bold"
+                                android:padding="1dp"
+                                android:textSize="18dp"
+                                />
+                            <TextView
+                                android:id="@+id/instagramEmpresa"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginBottom="10dp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textStyle="bold"
+                                android:typeface="serif"
+                                android:padding="1dp"
+                                android:textSize="12dp"
+                                android:text="www.instagram.com.br" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layoutFecebook"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="8dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:background="@drawable/fecebook"
+                                android:textStyle="bold"
+                                android:padding="1dp"
+                                android:textSize="18dp" />
+
+                            <TextView
+                                android:id="@+id/fecebookEmpresa"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="10dp"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textStyle="bold"
+                                android:typeface="serif"
+                                android:padding="1dp"
+                                android:textSize="12dp"
+                                android:text="www.facebook.com.br" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:elevation="5dp"
+                    app:cardUseCompatPadding="true"
+                    android:padding="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/fecebookDadoEmpresa"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginBottom="10dp"
+                                android:textStyle="bold"
+                                android:typeface="serif"
+                                android:padding="1dp"
+                                android:textSize="12dp"
+                                android:textColor="#ffffff" />
+                            <TextView
+                                android:id="@+id/instagramDadoEmpresa"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginTop="12dp"
+                                android:layout_marginBottom="10dp"
+                                android:textColor="#ffffff"
+                                android:textStyle="bold"
+                                android:typeface="serif"
+                                android:padding="1dp"
+                                android:textSize="12dp"
+                                android:text="" />
+
+                            <TextView
+                                android:id="@+id/descricaoDadoEmpresa"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginTop="2dp"
+                                android:textColor="#ffffff"
+                                android:textStyle="bold"
+                                android:typeface="serif"
+                                android:padding="1dp" />
+                        </LinearLayout>
+
+
+
+
+                </android.support.v7.widget.CardView>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+</android.support.design.widget.AppBarLayout>
+
+
+<android.support.design.widget.FloatingActionButton
+    android:id="@+id/floatCmpartilhar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_compartilha"
+    app:layout_anchor="@id/appBarLoja"
+    app:layout_anchorGravity="bottom|end"
+
+    android:layout_margin="16dp"/>
+
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+
